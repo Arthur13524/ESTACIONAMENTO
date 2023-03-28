@@ -5,6 +5,12 @@ function calcularconsumo() {
     hora = document.getElementById('hora').value
     categoria = document.getElementById('categoria').value
 
+     if (hora > 3) {
+        alert("O limite máximo de horas é 3.");
+        return;
+
+    }
+
  if(categoria == "subcompacto") {
      document.getElementById('nome').textContent = "R$" + hora * 3.50
  }
